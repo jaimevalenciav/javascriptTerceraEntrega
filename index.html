@@ -11,9 +11,26 @@
     <div class="container">
         <h1>Carro de Compras <button class="btn btn-warning">Ver Carrito</button></h1>
         <hr>
-        <div class="row" id="items">
 
-        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</h>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="footer">
+                    <th scope="row" colspan="5">Carrito vacío</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="row" id="cards"></div>
     </div>
 
     <template id="template-card">
@@ -22,7 +39,7 @@
                 <div class="card-body">
                     <img src="" alt="" class="card-img-top">
                     <h5 class="titulo-producto">Título</h5>
-                    <p class="my-1"><span>Precio: </span><span class="precio">Precio</span></p>
+                    <p class="my-1"><span>Precio: $</span><span class="precio">Precio</span></p>
                     <p class="my-1"><span>Unidades: </span><span class="unidades">Precio</span></p>
                     <p class="my-1"><span>Id: </span><span class="id">Precio</span></p>                    
                     <button class="btn btn-info">Añadir al Carrito</button>
