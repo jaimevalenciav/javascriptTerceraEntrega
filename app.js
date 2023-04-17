@@ -8,6 +8,7 @@ const fragment = document.createDocumentFragment()
 const mostrarCarrito = document.getElementById('mostrar-carrito')
 const mostrarBlanco = document.getElementById('mostrar-blancos')
 const mostrarTinto = document.getElementById('mostrar-tintos')
+const mostrarEspumante = document.getElementById('mostrar-espumantes')
 const mostrarTodos = document.getElementById('mostrar-todos')
 const carro = document.getElementById('carro')
 let carritoCompra = {}
@@ -91,7 +92,7 @@ const setCarritoCompra = objeto => {
 }
 
 const pintarCarrito = () => {
-    const clone = templateCarrito.cloneNode(true)
+    items.innerHTML = ""
     Object.values(carritoCompra).forEach(producto => {
         templateCarrito.querySelector('th').textContent = producto.id
         templateCarrito.querySelectorAll('td')[0].textContent = producto.title
@@ -100,12 +101,11 @@ const pintarCarrito = () => {
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
         templateCarrito.querySelector('.btn-warning').dataset.id = producto.id
         templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
-        
+        const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
     })
     items.appendChild(fragment)
     pintarFooter()
-
     localStorage.setItem('carritoCompra', JSON.stringify(carritoCompra))
 }
 
@@ -113,7 +113,7 @@ const pintarFooter = () => {
     footer.innerHTML = ''
     if(Object.keys(carritoCompra).length === 0) {
         footer.innerHTML = `
-        <th scope="row" colspan="5">Carrito vacío - a comprar!</th>
+            <th scope="row" colspan="5">Carrito vacío - Agregue productos a comprar!</th>
         `
         return
     }
@@ -238,6 +238,23 @@ const cargaTintos = async () => {
         const res = await fetch('api.json')
         let data = await res.json()        
         data2 = data.filter(producto => producto.color == 'tinto')        
+        console.log(data2)              
+        pintarCard(data2)
+    } catch (error) {
+        console.log(error)
+    }
+    
+}
+
+mostrarEspumante.addEventListener('click',() => {
+    cargaEspumantes()    
+})
+
+const cargaEspumantes = async () => {      
+    try {
+        const res = await fetch('api.json')
+        let data = await res.json()        
+        data2 = data.filter(producto => producto.color == 'espumante')        
         console.log(data2)              
         pintarCard(data2)
     } catch (error) {

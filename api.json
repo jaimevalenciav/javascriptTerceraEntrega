@@ -84,7 +84,7 @@
       "saldo": 13,
       "precio": 69990,
       "color": "tinto",
-      "title": "Morande House of Morandé Mezclas Tintas 2020",
+      "title": "House of Morandé Mezclas Tintas 2020",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/hax-medalla.png?v=1665591014"
     },
     {      
@@ -94,5 +94,37 @@
       "color": "tinto",
       "title": "Pack Regalo 7Colores Icono + Estuche negro",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/7colores-icon-cajanegra_254x300@2x.jpg?v=1638458514"
+    },
+    {      
+      "id": 13,
+      "saldo": 17,
+      "precio": 4963,
+      "color": "espumante",
+      "title": "Morandé Espumante Extra Brut Charmat",
+      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/Morande-Charmat_254x300@2x.jpg?v=1591057798"
+    },
+    {      
+      "id": 14,
+      "saldo": 11,
+      "precio": 13993,
+      "color": "espumante",
+      "title": "Espumoso Brut Nature Chardonnay/Pinot Noir",
+      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/Brut-Nature-medalla_254x300@2x.jpg?v=1616555360"
+    },
+    {      
+      "id": 15,
+      "saldo": 15,
+      "precio": 9093,
+      "color": "tinto",
+      "title": "Morandé Vitis Unica Mouvedre",
+      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/vitisunica-mv_254x300@2x.png?v=1677674789"
+    },
+    {      
+      "id": 16,
+      "saldo": 15,
+      "precio": 27060,
+      "color": "espumante",
+      "title": "Pack Morandé Brut Nature + estuche",
+      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/pack-brutnature-caja_254x300@2x.jpg?v=1638459621"
     }
   ]
