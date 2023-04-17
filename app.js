@@ -221,8 +221,7 @@ const cargaBlancos = async () => {
     try {
         const res = await fetch('api.json')
         let data = await res.json()        
-        data2 = data.filter(producto => producto.color == 'blanco')        
-        console.log(data2)              
+        data2 = data.filter(producto => producto.color == 'blanco')             
         pintarCard(data2)
     } catch (error) {
         console.log(error)
@@ -238,8 +237,7 @@ const cargaRosados = async () => {
     try {
         const res = await fetch('api.json')
         let data = await res.json()        
-        data2 = data.filter(producto => producto.color == 'rosado')        
-        console.log(data2)              
+        data2 = data.filter(producto => producto.color == 'rosado')                     
         pintarCard(data2)
     } catch (error) {
         console.log(error)
@@ -255,8 +253,7 @@ const cargaTintos = async () => {
     try {
         const res = await fetch('api.json')
         let data = await res.json()        
-        data2 = data.filter(producto => producto.color == 'tinto')        
-        console.log(data2)              
+        data2 = data.filter(producto => producto.color == 'tinto')              
         pintarCard(data2)
     } catch (error) {
         console.log(error)
@@ -272,8 +269,7 @@ const cargaEspumantes = async () => {
     try {
         const res = await fetch('api.json')
         let data = await res.json()        
-        data2 = data.filter(producto => producto.color == 'espumante')        
-        console.log(data2)              
+        data2 = data.filter(producto => producto.color == 'espumante')
         pintarCard(data2)
     } catch (error) {
         console.log(error)
