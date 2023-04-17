@@ -73,8 +73,9 @@ const setCarritoCompra = objeto => {
         saldo : objeto.querySelector('.unidades').textContent,
         cantidad: 1
     }
-    if(carritoCompra.hasOwnProperty(producto.id)){
-        producto.cantidad = carritoCompra[producto.id].cantidad + 1
+    if(carritoCompra.hasOwnProperty(producto.id)){        
+            producto.cantidad = carritoCompra[producto.id].cantidad + 1
+            producto.saldo = carritoCompra[producto.id].saldo - 1       
     }
     carritoCompra[producto.id] = {...producto}
     pintarCarrito() 
