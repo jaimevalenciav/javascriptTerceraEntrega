@@ -143,7 +143,7 @@ function lanzarAlerta(titulo, icon){
         icon: icon,
         //confirmButtonText: 'Aceptar',
         showConfirmButton: false,
-        timer: 1000
+        timer: 1500
       })
 }
 
