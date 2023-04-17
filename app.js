@@ -7,6 +7,7 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 const mostrarCarrito = document.getElementById('mostrar-carrito')
 const mostrarBlanco = document.getElementById('mostrar-blancos')
+const mostrarRosado = document.getElementById('mostrar-rosados')
 const mostrarTinto = document.getElementById('mostrar-tintos')
 const mostrarEspumante = document.getElementById('mostrar-espumantes')
 const mostrarTodos = document.getElementById('mostrar-todos')
@@ -221,6 +222,23 @@ const cargaBlancos = async () => {
         const res = await fetch('api.json')
         let data = await res.json()        
         data2 = data.filter(producto => producto.color == 'blanco')        
+        console.log(data2)              
+        pintarCard(data2)
+    } catch (error) {
+        console.log(error)
+    }
+    
+}
+
+mostrarRosado.addEventListener('click',() => {
+    cargaRosados()    
+})
+
+const cargaRosados = async () => {      
+    try {
+        const res = await fetch('api.json')
+        let data = await res.json()        
+        data2 = data.filter(producto => producto.color == 'rosado')        
         console.log(data2)              
         pintarCard(data2)
     } catch (error) {
