@@ -4,12 +4,14 @@
       "precio": 5833,
       "saldo": 4,
       "title": "Morandé Gewürztraminer 2021",
+      "color": "blanco",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/estatereserve-gw_254x300@2x.png?v=1677675462"
     },
     {      
       "id": 2,
       "precio": 12063,
       "saldo": 8,
+      "color": "tinto",
       "title": "Morandé Adventure Tirazis 2020",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/Adventure-Tirazis-medalla-2022_254x300@2x.jpg?v=1668044439"
     },
@@ -17,6 +19,7 @@
       "id": 3,
       "precio": 9933,
       "saldo": 5,
+      "color": "blanco",
       "title": "Morandé Adventure Bestiario",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/bestiario-medalla_254x300@2x.jpg?v=1668042276"
     },
@@ -24,6 +27,7 @@
       "id": 4,
       "precio": 9653,
       "saldo": 2,
+      "color": "tinto",
       "title": "Selección Enológica Carmenere 2020",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/seleccion-enologica-carmenere2022_254x300@2x.png?v=1661950210"
     },
@@ -31,6 +35,7 @@
       "id": 5,
       "precio": 8963,
       "saldo": 6,
+      "color": "tinto",
       "title": "Vistamar Gran Reserva Cabernet/Syrah 202",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/VistamarGranReservaCSyrah.png?v=1661988866"
     },
@@ -38,6 +43,7 @@
       "id": 6,
       "precio": 7458,
       "saldo": 14,
+      "color": "tinto",
       "title": "HAX Cabernet Sauvignon",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/hax-medalla.png?v=1665591014"
     },
@@ -45,6 +51,7 @@
       "id": 7,
       "precio": 5394,
       "saldo": 12,
+      "color": "blanco",
       "title": "Vistamar Chardonnay 2019",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/vistamar-coste-campo-medalla.jpg?v=1616814043"
     },
@@ -52,6 +59,7 @@
       "id": 8,
       "saldo": 17,
       "precio": 7458,
+      "color": "blanco",
       "title": "7 Colores Late Harvest 2022",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/7colores-late-harvest_254x300@2x.jpg?v=1641843746"
     },
@@ -59,6 +67,7 @@
       "id": 9,
       "saldo": 9,
       "precio": 7458,
+      "color": "blanco",
       "title": "7Colores Reserva Sauvignon Blanc 2022",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/7C-RES-SB_254x300@2x.png?v=1668022353"
     },
@@ -66,6 +75,7 @@
       "id": 10,
       "saldo": 22,
       "precio": 7458,
+      "color": "blanco",
       "title": "Morandé Late Harvest Sauvignon Blanc 2020",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/Morande-late-harvest_254x300@2x.jpg?v=1562862024"
     },
@@ -73,6 +83,7 @@
       "id": 11,
       "saldo": 13,
       "precio": 69990,
+      "color": "tinto",
       "title": "Morande House of Morandé Mezclas Tintas 2020",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/hax-medalla.png?v=1665591014"
     },
@@ -80,6 +91,7 @@
       "id": 12,
       "saldo": 15,
       "precio": 27060,
+      "color": "tinto",
       "title": "Pack Regalo 7Colores Icono + Estuche negro",
       "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/7colores-icon-cajanegra_254x300@2x.jpg?v=1638458514"
     }
