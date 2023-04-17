@@ -7,6 +7,7 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 const mostrarCarrito = document.getElementById('mostrar-carrito')
 const mostrarBlanco = document.getElementById('mostrar-blancos')
+const mostrarTinto = document.getElementById('mostrar-tintos')
 const mostrarTodos = document.getElementById('mostrar-todos')
 const carro = document.getElementById('carro')
 let carritoCompra = {}
@@ -39,7 +40,7 @@ const fetchData = async () => {
 }
 
 const pintarCard = data => { 
-    
+    cards.innerHTML=''
     data.forEach(producto => {
         templateCard.querySelector(".titulo-producto").textContent = producto.title
         templateCard.querySelector(".precio").textContent = producto.precio
@@ -90,7 +91,7 @@ const setCarritoCompra = objeto => {
 }
 
 const pintarCarrito = () => {
-    items.innerHTML = ''
+    const clone = templateCarrito.cloneNode(true)
     Object.values(carritoCompra).forEach(producto => {
         templateCarrito.querySelector('th').textContent = producto.id
         templateCarrito.querySelectorAll('td')[0].textContent = producto.title
@@ -99,7 +100,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
         templateCarrito.querySelector('.btn-warning').dataset.id = producto.id
         templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
-        const clone = templateCarrito.cloneNode(true)
+        
         fragment.appendChild(clone)
     })
     items.appendChild(fragment)
@@ -168,7 +169,7 @@ const btnAccion = e => {
         }else{
             Toastify({
                 text: "Sin unidades disponibles para el producto",
-                duration: 1000,
+                duration: 1500,
                 close: true,
                 gravity: "top",
                 position: "right",
@@ -220,6 +221,23 @@ const cargaBlancos = async () => {
         const res = await fetch('api.json')
         let data = await res.json()        
         data2 = data.filter(producto => producto.color == 'blanco')        
+        console.log(data2)              
+        pintarCard(data2)
+    } catch (error) {
+        console.log(error)
+    }
+    
+}
+
+mostrarTinto.addEventListener('click',() => {
+    cargaTintos()    
+})
+
+const cargaTintos = async () => {      
+    try {
+        const res = await fetch('api.json')
+        let data = await res.json()        
+        data2 = data.filter(producto => producto.color == 'tinto')        
         console.log(data2)              
         pintarCard(data2)
     } catch (error) {
