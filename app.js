@@ -279,19 +279,9 @@ const cargaEspumantes = async () => {
 }
 
 mostrarTodos.addEventListener('click',() => {
-    cargaTodos()    
+    fetchData()    
 })
 
-const cargaTodos = async () => {      
-    try {
-        const res = await fetch('api.json')
-        const data = await res.json()             
-        pintarCard(data)
-    } catch (error) {
-        console.log(error)
-    }
-    
-}
 
 
 
